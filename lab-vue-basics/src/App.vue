@@ -1,30 +1,41 @@
 <script setup>
 import NavBar from './components/icons/NavBar.vue'
 import Footer from './components/icons/Footer.vue'
-
+import Boolean from './components/icons/Boolean.vue'
+import ListOfElements from './components/icons/ListOfElements.vue'
 
 </script>
 
+
 <template>
+  <h1>Ironhack Basic Vue.js</h1>
+  
   <NavBar> </NavBar>
 
-  <p>Shops are for adults only. Validate you're <input type="number" placeholder="age" {{ age }}> to enjoy or ask you're mom to help you find the best clothing for you!</p>
-  <p v-if="age >=14"> It's shopping day! Enjoy our limited edition with a reasonable price!</p>
-  <p v-else>It's too early for you to shop.</p>
+  <p class="number"> 2 + 2 = {{ 2 + 2 }}</p>
 
-<!--- 
-<h2>Shops Here</h2> 
-  <ul>
-    <li>Men</li>
-    <li>Women</li>
-    <li>Kids</li>
-  </ul>
-  -->
-  <Footer> </Footer>
-  
+  <Boolean> </Boolean>
+
+  <ListOfElements> </ListOfElements>
+
+  <Footer> </Footer>  
 </template>
 
 
-<style>
 
+<style>
+body {
+  text-align: center;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 60px; 
+}
+.number {
+  font-size: larger;
+  background-color: yellowgreen;
+  margin: 40px 0px;
+  padding: 10px;
+}
 </style>
