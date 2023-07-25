@@ -16,12 +16,12 @@ export default {
 
 <template>
     
-    <div class="boolean">
-        <button @click="toggleElement"> {{ showOrHide? 'Hide Message' : 'Show Hidden Message'}} </button>
+    <div class="boolean">        
         <div v-if="showOrHide">
-            <p> You're seeing me because the condition is true. <br> Or you can hide me again by clicking the button above. </p>
-        </div>
-        <div v-else></div>              
+             You're seeing me because the condition is true. <br> Or you can hide me again by clicking the button below.
+        </div> 
+        <div v-else> I have a message for you! Click me! </div> 
+        <button @click="toggleElement"> {{ showOrHide? 'Hide Message' : 'Show Hidden Message'}} </button>             
     </div>
 </template>
 
@@ -33,5 +33,8 @@ export default {
     text-align: center;
     margin-top: 30px;
     padding: 30px;
+}
+div {
+    margin-bottom: 20px;
 }
 </style>
