@@ -1,0 +1,1 @@
+good job! your components shouldn't be on the components/icons folder, just in components, and it would be a good practice that every component had the <script setup> tag, even if the can work otherwise, like your Footer component :)
